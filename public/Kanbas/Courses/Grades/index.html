@@ -1,7 +1,7 @@
 <html>
   <head> </head>
   <body>
-    <table width="100%">
+    <table width="80%">
       <tbody>
         <tr>
           <td>
@@ -11,22 +11,21 @@
               <option>Traditional Gradebook</option>
               <option>Individual Gradebook</option>
             </select>
+            <button>Import</button>
           </td>
           <td>
-            <button>Shortcuts</button>
-            <button>Import</button>
             <select>
               <option>Export</option>
               <option>Export Current Gradebook View</option>
               <option>Export Entire Gradebook</option>
             </select>
-            <button>Settings</button>
+            <button>Configure</button>
           </td>
         </tr>
         <tr>
           <td>
             <h4>Student Names</h4>
-            <input /><br />
+            <input placeholder="Search Students" /><br />
             <select>
               <option>John Doe</option>
               <option>Jane Doe</option>
@@ -34,9 +33,11 @@
               <option>Charlie Brown</option></select
             ><br />
           </td>
+        </tr>
+        <tr>
           <td>
             <h4>Assignment Names</h4>
-            <input /><br />
+            <input placeholder="Search Assignments" /><br />
             <select>
               <option>A1</option>
               <option>A2</option>
@@ -48,20 +49,22 @@
       </tbody>
     </table>
     <button>Apply Filters</button>
-    <table width="100%">
+    <br />
+    <br />
+
+    <table border="1" width="50%">
       <thead>
         <tr>
           <th>Student Name</th>
-          <th>A1</th>
-          <th>A2</th>
-          <th>A3</th>
-          <th>A4</th>
-          <th>A5</th>
-          <th>A6</th>
-          <th>Q1</th>
-          <th>Q2</th>
-          <th>Q3</th>
-          <th>Q4</th>
+          <th>A1 SETUP <br />Out of 100</th>
+          <th>A2 HTML <br />Out of 100</th>
+          <th>A3 CSS <br />Out of 100</th>
+          <th>A4 BOOTSTRAP <br />Out of 100</th>
+          <th>A5 JAVASCRIPT <br />Out of 100</th>
+          <th>A6 REACT <br />Out of 100</th>
+          <th>A7 REDUX <br />Out of 100</th>
+          <th>A8 NODE <br />Out of 100</th>
+          <th>A9 MONGO <br />Out of 100</th>
         </tr>
       </thead>
       <tbody>
@@ -76,18 +79,16 @@
           <td>100</td>
           <td>100</td>
           <td>100</td>
-          <td>100</td>
         </tr>
         <tr>
           <td>Jane Doe</td>
-          <td>100</td>
+          <td><input value="100" /></td>
           <td><input value="100" /></td>
           <td>100</td>
           <td>100</td>
           <td>100</td>
           <td>100</td>
           <td><input value="100" /></td>
-          <td>100</td>
           <td>100</td>
           <td>100</td>
         </tr>
@@ -96,10 +97,9 @@
           <td>100</td>
           <td><input value="100" /></td>
           <td>100</td>
-          <td>100</td>
-          <td>100</td>
           <td><input value="100" /></td>
-          <td>100</td>
+          <td><input value="100" /></td>
+          <td><input value="100" /></td>
           <td>100</td>
           <td>100</td>
           <td>100</td>
@@ -112,7 +112,6 @@
           <td>100</td>
           <td>100</td>
           <td>100</td>
-          <td><input value="100" /></td>
           <td>100</td>
           <td><input value="100" /></td>
           <td><input value="100" /></td>

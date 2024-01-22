@@ -6,42 +6,43 @@
         <tr>
           <td valign="top">
             <ul>
-              <li>
-                <a href="/Kanbas/Account/Navigation/index.html"> Account</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Calendar/index.html">Calendar</a>
-              </li>
-              <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
+              <li><a href="../../Account/Profile/screen.html">Account</a></li>
+              <li><a href="../Dashboard/screen.html">Dashboard</a></li>
+              <li><a href="../Home/screen.html">Courses</a></li>
+              <li><a href="../Calendar/index.html">Calendar</a></li>
+              <li><a href="../Inbox/index.html">Inbox</a></li>
+              <li><a href="../History/index.html">History</a></li>
+              <li><a href="../Studio/index.html">Studio</a></li>
+              <li><a href="../Commons/index.html">Commons</a></li>
+              <li><a href="../Help/index.html">Help</a></li>
             </ul>
           </td>
 
           <td valign="top">
             <ul>
-              <li>
-                <a href="../Home/screen.html"> Home</a>
-              </li>
-              <li>
-                <a href="../Modules/index.html"> Modules</a>
-              </li>
-              <li><a href="/Kanbas/Courses/Piazza/index.html"> Piazza</a></li>
-              <li><a href="../Grades/screen.html"> Grades</a></li>
-              <li>
-                <a href="/Kanbas/Courses/Assignments/screen.html">
-                  Assignments</a
-                >
-              </li>
+              <li><a href="../Home/screen.html">Home</a></li>
+              <li><a href="../Modules/screen.html">Modules</a></li>
+              <li><a href="../Piazza/index.html">Piazza</a></li>
+              <li><a href="../Zoom Meetings/index.html">Zoom Meetings</a></li>
+              <li><a href="../Assignments/screen.html">Assignments</a></li>
+              <li><a href="../Quizzes/index.html">Quizzes</a></li>
+              <li><a href="../Grades/screen.html">Grades</a></li>
+              <li><a href="../People/index.html">People</a></li>
+              <li><a href="../Panopto Video/index.html">Panopto Video</a></li>
+              <li><a href="../Discussions/index.html">Discussions</a></li>
+              <li><a href="../Announcements/index.html">Announcements</a></li>
+              <li><a href="../Pages/index.html">Pages</a></li>
+              <li><a href="../Files/index.html">Files</a></li>
+              <li><a href="../Rubrics/index.html">Rubrics</a></li>
+              <li><a href="../Outcomes/index.html">Outcomes</a></li>
+              <li><a href="../Collaborations/index.html">Collaborations</a></li>
+              <li><a href="../Syllabus/index.html">Syllabus</a></li>
+              <li><a href="../Settings/index.html">Settings</a></li>
             </ul>
           </td>
 
           <td valign="top">
-            <table width="100%">
+            <table width="50%">
               <tbody>
                 <tr>
                   <td>
@@ -51,22 +52,21 @@
                       <option>Traditional Gradebook</option>
                       <option>Individual Gradebook</option>
                     </select>
+                    <button>Import</button>
                   </td>
                   <td>
-                    <button>Shortcuts</button>
-                    <button>Import</button>
                     <select>
                       <option>Export</option>
                       <option>Export Current Gradebook View</option>
                       <option>Export Entire Gradebook</option>
                     </select>
-                    <button>Settings</button>
+                    <button>Configure</button>
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <h4>Student Names</h4>
-                    <input /><br />
+                    <input placeholder="Search Students" /><br />
                     <select>
                       <option>John Doe</option>
                       <option>Jane Doe</option>
@@ -74,9 +74,11 @@
                       <option>Charlie Brown</option></select
                     ><br />
                   </td>
+                </tr>
+                <tr>
                   <td>
                     <h4>Assignment Names</h4>
-                    <input /><br />
+                    <input placeholder="Search Assignments" /><br />
                     <select>
                       <option>A1</option>
                       <option>A2</option>
@@ -88,20 +90,22 @@
               </tbody>
             </table>
             <button>Apply Filters</button>
-            <table border="1" width="100%">
+            <br />
+            <br />
+
+            <table border="1" width="50%">
               <thead>
                 <tr>
                   <th>Student Name</th>
-                  <th>A1</th>
-                  <th>A2</th>
-                  <th>A3</th>
-                  <th>A4</th>
-                  <th>A5</th>
-                  <th>A6</th>
-                  <th>Q1</th>
-                  <th>Q2</th>
-                  <th>Q3</th>
-                  <th>Q4</th>
+                  <th>A1 SETUP <br />Out of 100</th>
+                  <th>A2 HTML <br />Out of 100</th>
+                  <th>A3 CSS <br />Out of 100</th>
+                  <th>A4 BOOTSTRAP <br />Out of 100</th>
+                  <th>A5 JAVASCRIPT <br />Out of 100</th>
+                  <th>A6 REACT <br />Out of 100</th>
+                  <th>A7 REDUX <br />Out of 100</th>
+                  <th>A8 NODE <br />Out of 100</th>
+                  <th>A9 MONGO <br />Out of 100</th>
                 </tr>
               </thead>
               <tbody>
@@ -116,18 +120,16 @@
                   <td>100</td>
                   <td>100</td>
                   <td>100</td>
-                  <td>100</td>
                 </tr>
                 <tr>
                   <td>Jane Doe</td>
-                  <td>100</td>
+                  <td><input value="100" /></td>
                   <td><input value="100" /></td>
                   <td>100</td>
                   <td>100</td>
                   <td>100</td>
                   <td>100</td>
                   <td><input value="100" /></td>
-                  <td>100</td>
                   <td>100</td>
                   <td>100</td>
                 </tr>
@@ -136,10 +138,9 @@
                   <td>100</td>
                   <td><input value="100" /></td>
                   <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
                   <td><input value="100" /></td>
-                  <td>100</td>
+                  <td><input value="100" /></td>
+                  <td><input value="100" /></td>
                   <td>100</td>
                   <td>100</td>
                   <td>100</td>
@@ -152,7 +153,6 @@
                   <td>100</td>
                   <td>100</td>
                   <td>100</td>
-                  <td><input value="100" /></td>
                   <td>100</td>
                   <td><input value="100" /></td>
                   <td><input value="100" /></td>
