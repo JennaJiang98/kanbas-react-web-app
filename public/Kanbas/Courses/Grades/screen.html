@@ -1,169 +1,324 @@
 <html>
-  <head> </head>
+  <head>
+    <link rel="stylesheet" href="../../../libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../../libs/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../../Navigation/index.css" />
+    <link rel="stylesheet" href="../Navigation/index.css" />
+    <script
+      src="https://kit.fontawesome.com/d86fba7c7b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
   <body>
-    <table>
-      <tbody>
-        <tr>
-          <td valign="top">
-            <ul>
-              <li><a href="../../Account/Profile/screen.html">Account</a></li>
-              <li><a href="../Dashboard/screen.html">Dashboard</a></li>
-              <li><a href="../Home/screen.html">Courses</a></li>
-              <li><a href="../Calendar/index.html">Calendar</a></li>
-              <li><a href="../Inbox/index.html">Inbox</a></li>
-              <li><a href="../History/index.html">History</a></li>
-              <li><a href="../Studio/index.html">Studio</a></li>
-              <li><a href="../Commons/index.html">Commons</a></li>
-              <li><a href="../Help/index.html">Help</a></li>
-            </ul>
-          </td>
+    <div class="wd-flex-row-container">
+      <div class="wd-flex-row-container">
+        <div id="kanbas-navigation">
+          <ul class="wd-kanbas-navigation" class="col-lg-2 d-none d-lg-block">
+            <li>
+              <a href="https://northeastern.edu"
+                ><img
+                  src="../../image/neu.png"
+                  alt="N"
+                  style="width: 50px; height: 50px"
+              /></a>
+            </li>
+            <li>
+              <a href="/Kanbas/Account/Profile/index.html">
+                <i
+                  class="fa fa-user"
+                  aria-hidden="true"
+                  style="color: white"
+                ></i>
+                Account</a
+              >
+            </li>
+            <li>
+              <a href="../../Dashboard/screen.html">
+                <i class="fas fa-tachometer" aria-hidden="true"></i>
+                Dashboard</a
+              >
+            </li>
+            <li class="wd-kanbas-navigation-active">
+              <a href="../Home/screen.html">
+                <i class="fa fa-book" aria-hidden="true"></i> Courses</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-calendar" aria-hidden="true"></i>Calender</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-inbox" aria-hidden="true"></i> Inbox</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-clock" aria-hidden="true"></i> History</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-laptop" aria-hidden="true"></i> Studio</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-creative-commons" aria-hidden="true"></i>
+                Commons</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                Help</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="course-navigation">
+        <ul class="wd-course-navigation">
+          <li>
+            <a href="../Home/screen.html">Home</a>
+          </li>
+          <li>
+            <a href="#">Modules</a>
+          </li>
+          <li>
+            <a href="#">Piazza</a>
+          </li>
+          <li>
+            <a href="#">Zoom Meetings</a>
+          </li>
+          <li>
+            <a href="../Assignments/screen.html">Assignments</a>
+          </li>
+          <li>
+            <a href="#">Ouizzes</a>
+          </li>
+          <li class="wd-course-navigation-active">
+            <a href="../Grades/screen.html">Grades</a>
+          </li>
+          <li>
+            <a href="#">People</a>
+          </li>
+          <li>
+            <a href="#">Panopto Video</a>
+          </li>
+          <li>
+            <a href="#">Discussions</a>
+          </li>
+          <li>
+            <a href="#">Announcements</a>
+          </li>
+          <li>
+            <a href="#">Pages</a>
+          </li>
+          <li>
+            <a href="#">Files</a>
+          </li>
+          <li>
+            <a href="#">Rubrics</a>
+          </li>
+          <li>
+            <a href="#">Outcomes</a>
+          </li>
+          <li>
+            <a href="#">Collaborations</a>
+          </li>
+          <li>
+            <a href="#">Syllabus</a>
+          </li>
+          <li>
+            <a href="#" target="_top">Settings</a>
+          </li>
+        </ul>
+      </div>
+      <div id="wd-grades">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active">CS5610.11744.202310</li>
+            <li class="breadcrumb-item" aria-current="page">> Grades</li>
+          </ol>
+        </nav>
+        <hr />
 
-          <td valign="top">
-            <ul>
-              <li><a href="../Home/screen.html">Home</a></li>ß
-              <li><a href="../Modules/screen.html">Modules</a></li>
-              <li><a href="../Piazza/index.html">Piazza</a></li>
-              <li><a href="../Zoom Meetings/index.html">Zoom Meetings</a></li>
-              <li><a href="../Assignments/screen.html">Assignments</a></li>
-              <li><a href="../Quizzes/index.html">Quizzes</a></li>
-              <li><a href="../Grades/screen.html">Grades</a></li>
-              <li><a href="../People/index.html">People</a></li>
-              <li><a href="../Panopto Video/index.html">Panopto Video</a></li>
-              <li><a href="../Discussions/index.html">Discussions</a></li>
-              <li><a href="../Announcements/index.html">Announcements</a></li>
-              <li><a href="../Pages/index.html">Pages</a></li>
-              <li><a href="../Files/index.html">Files</a></li>
-              <li><a href="../Rubrics/index.html">Rubrics</a></li>
-              <li><a href="../Outcomes/index.html">Outcomes</a></li>
-              <li><a href="../Collaborations/index.html">Collaborations</a></li>
-              <li><a href="../Syllabus/index.html">Syllabus</a></li>
-              <li>
-                <a href="../Settings/Course Details/screen.html">Settings</a>
-              </li>
-            </ul>
-          </td>
+        <div id="wd-grades-button" class="row justify-content-end">
+          <button class="btn btn-sm btn-secondary col-md-2">
+            <i class="fa fa-upload" aria-hidden="true"></i>Import
+          </button>
+          <select class="btn btn-sm btn-secondary col-md-2">
+            <option value="EXPORT">➩ Export</option>
+            <option value="EXPORT-1">➩ Export</option>
+            <option value="EXPORT-2">➩ Export</option>
+          </select>
+          <button class="btn btn-sm btn-secondary square-btn">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+        </div>
 
-          <td valign="top">
-            <table width="50%">
-              <tbody>
-                <tr>
-                  <td>
-                    <select>
-                      <option>Gradebook</option>
-                      <option>Change Gradebook view</option>
-                      <option>Traditional Gradebook</option>
-                      <option>Individual Gradebook</option>
-                    </select>
-                    <button>Import</button>
-                  </td>
-                  <td>
-                    <select>
-                      <option>Export</option>
-                      <option>Export Current Gradebook View</option>
-                      <option>Export Entire Gradebook</option>
-                    </select>
-                    <button>Configure</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <h4>Student Names</h4>
-                    <input placeholder="Search Students" /><br />
-                    <select>
-                      <option>John Doe</option>
-                      <option>Jane Doe</option>
-                      <option>Alice Wonderland</option>
-                      <option>Charlie Brown</option></select
-                    ><br />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <h4>Assignment Names</h4>
-                    <input placeholder="Search Assignments" /><br />
-                    <select>
-                      <option>A1</option>
-                      <option>A2</option>
-                      <option>Q1</option>
-                      <option>Q2</option></select
-                    ><br />
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <button>Apply Filters</button>
-            <br />
-            <br />
+        <div id="wd-grades-search" class="row">
+          <div class="wd-grades-item col-md-6">
+            <h6>Student Names</h6>
+            <input
+              type="text"
+              placeholder="Search Students"
+              class="form-control"
+            />
+          </div>
+          <div class="wd-grades-item col-md-6">
+            <h6>Assignment Names</h6>
+            <input placeholder="Search Assignments" class="form-control" />
+          </div>
+        </div>
+        <div class="wd-grades-item">
+          <button class="btn btn-secondary">Apply Filters</button>
+        </div>
 
-            <table border="1" width="50%">
-              <thead>
-                <tr>
-                  <th>Student Name</th>
-                  <th>A1 SETUP <br />Out of 100</th>
-                  <th>A2 HTML <br />Out of 100</th>
-                  <th>A3 CSS <br />Out of 100</th>
-                  <th>A4 BOOTSTRAP <br />Out of 100</th>
-                  <th>A5 JAVASCRIPT <br />Out of 100</th>
-                  <th>A6 REACT <br />Out of 100</th>
-                  <th>A7 REDUX <br />Out of 100</th>
-                  <th>A8 NODE <br />Out of 100</th>
-                  <th>A9 MONGO <br />Out of 100</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>John Doe</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td><input value="100" /></td>
-                  <td>100</td>
-                  <td><input value="100" /></td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                </tr>
-                <tr>
-                  <td>Jane Doe</td>
-                  <td><input value="100" /></td>
-                  <td><input value="100" /></td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td><input value="100" /></td>
-                  <td>100</td>
-                  <td>100</td>
-                </tr>
-                <tr>
-                  <td>Alice Wonderland</td>
-                  <td>100</td>
-                  <td><input value="100" /></td>
-                  <td>100</td>
-                  <td><input value="100" /></td>
-                  <td><input value="100" /></td>
-                  <td><input value="100" /></td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                </tr>
-                <tr>
-                  <td>Charlie Brown</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td><input value="100" /></td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td><input value="100" /></td>
-                  <td><input value="100" /></td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+        <div id="grades-table" class="table-responsive">
+          <table id="grades-table" class="table table-striped table-bordered">
+            <thead class="thead-dark">
+              <tr>
+                <th>Student Name</th>
+                <th>
+                  A1 SETUP <br />
+                  Out of 100
+                </th>
+                <th>A2 HTML <br />Out of 100</th>
+                <th>A3 CSS <br />Out of 100</th>
+                <th>
+                  A4 BOOTSTRAP<br />
+                  Out of 100
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="wd-grade-student-name">Doxa Asibey</td>
+                <td>98%</td>
+                <td>89%</td>
+                <td>87%</td>
+                <td>90%</td>
+              </tr>
+              <tr>
+                <td class="wd-grade-student-name">Thuy Tien Bui</td>
+                <td>98%</td>
+                <td>80%</td>
+                <td>87%</td>
+                <td>86%</td>
+              </tr>
+              <tr>
+                <td class="wd-grade-student-name">Yetong Chen</td>
+                <td>
+                  <input
+                    type="number"
+                    name="student-grade"
+                    id=""
+                    value="99"
+                    max="100"
+                    min="0"
+                    step="1"
+                  />
+                  %
+                </td>
+                <td>88%</td>
+                <td>97%</td>
+                <td>82%</td>
+              </tr>
+              <tr>
+                <td class="wd-grade-student-name">Zhenyu Chen</td>
+                <td>83%</td>
+                <td>99%</td>
+                <td>94%</td>
+                <td>98%</td>
+              </tr>
+              <tr>
+                <td class="wd-grade-student-name">Doxa Asibey</td>
+                <td>98%</td>
+                <td>89%</td>
+                <td>87%</td>
+                <td>90%</td>
+              </tr>
+              <tr>
+                <td class="wd-grade-student-name">Thuy Tien Bui</td>
+                <td>98%</td>
+                <td>80%</td>
+                <td>87%</td>
+                <td>86%</td>
+              </tr>
+              <tr>
+                <td class="wd-grade-student-name">Yetong Chen</td>
+                <td>
+                  <input
+                    type="number"
+                    name="student-grade"
+                    id=""
+                    value="99"
+                    max="100"
+                    min="0"
+                    step="1"
+                  />
+                  %
+                </td>
+                <td>88%</td>
+                <td>97%</td>
+                <td>82%</td>
+              </tr>
+              <tr>
+                <td class="wd-grade-student-name">Zhenyu Chen</td>
+                <td>83%</td>
+                <td>99%</td>
+                <td>94%</td>
+                <td>98%</td>
+              </tr>
+              <tr>
+                <td class="wd-grade-student-name">Doxa Asibey</td>
+                <td>98%</td>
+                <td>89%</td>
+                <td>87%</td>
+                <td>90%</td>
+              </tr>
+              <tr>
+                <td class="wd-grade-student-name">Thuy Tien Bui</td>
+                <td>98%</td>
+                <td>80%</td>
+                <td>87%</td>
+                <td>86%</td>
+              </tr>
+              <tr>
+                <td class="wd-grade-student-name">Yetong Chen</td>
+                <td>
+                  <input
+                    type="number"
+                    name="student-grade"
+                    id=""
+                    value="99"
+                    max="100"
+                    min="0"
+                    step="1"
+                  />
+                  %
+                </td>
+                <td>88%</td>
+                <td>97%</td>
+                <td>82%</td>
+              </tr>
+              <tr>
+                <td class="wd-grade-student-name">Zhenyu Chen</td>
+                <td>83%</td>
+                <td>99%</td>
+                <td>94%</td>
+                <td>98%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

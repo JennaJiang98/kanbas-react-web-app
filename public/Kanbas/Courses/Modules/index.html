@@ -1,30 +1,205 @@
 <html>
-  <head> </head>
+  <head>
+    <link rel="stylesheet" href="../../../libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../../libs/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../../Navigation/index.css" />
+    <link rel="stylesheet" href="../Navigation/index.css" />
+    <!-- <script src="https://kit.fontawesome.com/d86fba7c7b.js"></script> -->
+  </head>
+
   <body>
-    <button>Collapse All</button>
-    <button>View Progress</button>
-    <select>
-      <option>Publish All</option>
-      <option>Unpublish All</option>
-      <option>Unpublish All</option>
-    </select>
-    <button>+ Module</button>
-    <hr />
-    <ul>
-      <li>
-        Week 1
-        <ul>
-          <li>Learning Objectives</li>
-          <li>Introduction to the course</li>
-          <li>Learn what is Web Development</li>
-        </ul>
-      </li>
-      <li>
-        Week 2
-        <ul>
-          <li>Learning Objectives</li>
-        </ul>
-      </li>
-    </ul>
+    <div class="wd-flex-row-container">
+      <div id="home-module" class="col-lg-8 col-md-12 col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active">CS4550.12631.202410</li>
+            <li class="breadcrumb-item" aria-current="page">> Modules</li>
+          </ol>
+        </nav>
+
+        <div id="home-button" class="row justify-content-end">
+          <button class="btn btn-sm btn-secondary col-md-2">
+            Collapse All
+          </button>
+          <button class="btn btn-sm btn-secondary col-md-2">
+            View Progress
+          </button>
+          <select class="btn btn-sm btn-secondary col-md-2 d-flex">
+            <option value="PUBLISH-ALL" class="dropdown-item">
+              Publish All
+            </option>
+            <option value="PUBLISH-1" class="dropdown-item">Publish 1</option>
+            <option value="PUBLISH-2" class="dropdown-item">Publish 2</option>
+          </select>
+          <button class="btn btn-sm btn-danger col-md-2">+ Module</button>
+          <button class="btn btn-secondary col-md-2 square-btn">
+            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <hr />
+        <div id="module-container" class="row">
+          <div id="module" class="list-group col-12 col-md-9 col-lg-8">
+            <ul>
+              <li class="list-group-item list-group-item-secondary">
+                Week 0 - INTRO
+                <ul>
+                  <li class="list-group-item">
+                    LEARNING OBJECTIVES
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        Introduction to the course
+                        <i
+                          class="fa fa-check-circle float-end"
+                          aria-hidden="true"
+                        ></i>
+                      </li>
+                      <li class="list-group-item">
+                        Learn what is Web Development
+                        <i
+                          class="fa fa-check-circle float-end"
+                          aria-hidden="true"
+                        ></i>
+                      </li>
+                      <li class="list-group-item">
+                        Creating a development environment
+                        <i
+                          class="fa fa-check-circle float-end"
+                          aria-hidden="true"
+                        ></i>
+                      </li>
+                      <li class="list-group-item">
+                        Creating a Web Application
+                        <i
+                          class="fa fa-check-circle float-end"
+                          aria-hidden="true"
+                        ></i>
+                      </li>
+                      <li class="list-group-item" i>
+                        Getting started with the 1st assignment
+                        <i
+                          class="fa fa-check-circle float-end"
+                          aria-hidden="true"
+                        ></i>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="list-group-item">
+                    READING
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        Full Stack Developer - Chapter 1 - Introduction
+                        <i
+                          class="fa fa-check-circle float-end"
+                          aria-hidden="true"
+                        ></i>
+                      </li>
+                      <li class="list-group-item">
+                        Full Stack Developer - Chapter 2 - Creating User
+                        Interfaces With HTML
+                        <i
+                          class="fa fa-check-circle float-end"
+                          aria-hidden="true"
+                        ></i>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="list-group-item">
+                    SLIDES
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        <a href="#">Introduction to Web Development</a>
+                        <i
+                          class="fa fa-check-circle float-end"
+                          aria-hidden="true"
+                        ></i>
+                      </li>
+                      <li class="list-group-item">
+                        <a href="#">Creating an HTTP server with Node.js</a>
+                        <i
+                          class="fa fa-check-circle float-end"
+                          aria-hidden="true"
+                        ></i>
+                      </li>
+                      <li class="list-group-item">
+                        <a href="#">Creating a React Application</a>
+                        <i
+                          class="fa fa-check-circle float-end"
+                          aria-hidden="true"
+                        ></i>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-group-item list-group-item-secondary">
+                Week 1 - HTML
+                <ul>
+                  <li class="list-group-item">
+                    LEARNING OBJECTIVES
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        Learn how to create user interfaces with HTML<i
+                          class="fa fa-check-circle float-end"
+                          aria-hidden="true"
+                        ></i>
+                      </li>
+                      <li class="list-group-item">
+                        Keep working on assignment 1<i
+                          class="fa fa-check-circle float-end"
+                          aria-hidden="true"
+                        ></i>
+                      </li>
+                      <li class="list-group-item">
+                        Deploy the assignment to Netlify<i
+                          class="fa fa-check-circle float-end"
+                          aria-hidden="true"
+                        ></i>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="list-group-item">
+                    READING
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        Full Stack Developer - Chapter 1 - Introduction<i
+                          class="fa fa-check-circle float-end"
+                          aria-hidden="true"
+                        ></i>
+                      </li>
+                      <li class="list-group-item">
+                        Full Stack Developer - Chapter 2 - Creating User
+                        Interfaces With HTML
+                        <i
+                          class="fa fa-check-circle float-end"
+                          aria-hidden="true"
+                        ></i>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+      integrity="sha256-u7e5khyDYiR3+yjB5t4gEDEd3ZK+ZL5TPft/7a9E6k0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-wvC9cgFCq8ub3THpFqxP56Fvf7CpO5qznxopF+U6IWEf+7AD56fYGgmZG7eM1BPP"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"
+      integrity="sha384-3qQBRnqC9u7qK4qXf+Lt7HdYqfZlMf/woUqPz8r7FWEo6Kb1/JS5PT1O2Fg2GssF"
+      crossorigin="anonymous"
+    ></script> -->
   </body>
 </html>

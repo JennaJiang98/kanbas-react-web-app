@@ -1,28 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .wd-kanbas-navigation {
   background-color: black;
   list-style: none;
   padding: 0px;
-  margin: 0px;
   width: 80px;
+  margin: 0px;
+  position: fixed;
+  height: 100%;
 }
+
+.wd-flex-row-container {
+  margin-left: 0px;
+}
+
+#course-navigation,
+#home-module {
+  margin-left: 80px;
+}
+
+#module-container {
+  margin-left: -100px;
+}
+
 .wd-kanbas-navigation li {
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: 0.8em;
+  padding: 5px;
+  margin-bottom: 12px;
   text-align: center;
+  font-size: 0.83em;
 }
-.wd-kanbas-navigation li.wd-active {
+
+.wd-kanbas-navigation li.wd-kanbas-navigation-active {
   background-color: white;
 }
-.wd-kanbas-navigation li.wd-active a {
-  color: red;
+
+.wd-kanbas-navigation li.wd-kanbas-navigation-active a {
+  color: rgb(191, 8, 8);
 }
-.wd-kanbas-navigation a {
+
+.wd-kanbas-navigation li a {
   color: white;
   text-decoration: none;
+  display: block;
 }
+
 .wd-kanbas-navigation a i {
-  color: red;
-  font-size: 2em;
+  color: rgb(191, 8, 8);
+  font-size: 1.5em;
   margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+.p-4 {
+  margin-left: 100px; /* Adjust the margin-left value */
 }
