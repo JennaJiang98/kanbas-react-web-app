@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="../../Navigation/index.css" />
     <link rel="stylesheet" href="../Navigation/index.css" />
-    <script src="https://kit.fontawesome.com/d86fba7c7b.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
   <body>
@@ -156,44 +154,160 @@
       </div>
 
       <div id="home-module" class="col-lg-8 col-md-12 col-12">
-        <button
-          id="top-left-button"
-          class="btn btn-secondary"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavigation"
-          aria-controls="offcanvasNavigation"
-        >
-          <i class="fas fa-bars"></i> Navigation
-        </button>
-
-        <!-- Navigation bar -->
+        <!-- Offcanvas Navigation here-->
         <div
-          class="offcanvas offcanvas-start"
-          tabindex="-1"
-          id="offcanvasNavigation"
-          aria-labelledby="offcanvasNavigationLabel"
+          class="d-flex flex-row justify-content-between home-modules-hidden d-xl-none d-lg-none d-md-none d-sm-block d-xs-none"
         >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavigationLabel">
-              Navigation
-            </h5>
-            <button
-              type="button"
-              class="btn-close text-reset"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
+          <div class="p-2">
+            <a
+              class="btn"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasScrolling"
+              role="button"
+              aria-controls="offcanvasScrolling"
+            >
+              <i class="fa fa-bars" style="color: white"></i>
+            </a>
+            <div
+              class="offcanvas offcanvas-start offcanvas-fullscreen"
+              data-bs-scroll="true"
+              data-bs-backdrop="false"
+              tabindex="-1"
+              id="offcanvasScrolling"
+              aria-labelledby="offcanvasScrollingLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="text-left offcanvas-body-row">
+                  <div class="row">
+                    <a href="../../Dashboard/screen.html">
+                      <i class="fa fa-tachometer"></i> Dashboard</a
+                    >
+                  </div>
+                  <div class="row">
+                    <a href="../../Account/Profile/screen.html"
+                      ><i class="fa fa-user"></i> Account</a
+                    >
+                  </div>
+                  <div class="row">
+                    <a href="../Home/screen.html"
+                      ><i class="fa fa-book"></i> Courses</a
+                    >
+                  </div>
+                  <div class="row">
+                    <a href="#"><i class="fa fa-user"></i> Groups</a>
+                  </div>
+                  <div class="row">
+                    <a href="#"><i class="fa fa-calendar"></i> Calendar</a>
+                  </div>
+                  <div class="row">
+                    <a href="#"><i class="fa fa-inbox"></i> Inbox</a>
+                  </div>
+                  <div class="row">
+                    <a href="#"><i class="fa fa-play"></i> Studio</a>
+                  </div>
+                  <div class="row">
+                    <a href="#"><i class="fa fa-history"></i> History</a>
+                  </div>
+                  <div class="row">
+                    <a href="#"><i class="fa fa-question-circle"></i> Help</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="offcanvas-body">
-            <!-- navigation content goes here -->
-            <a class="dropdown-item" href="../../Account/Profile/index.html"
-              >Account</a
-            >
-            <a class="dropdown-item" href="../../Dashboard/screen.html"
-              >Dashboard</a
-            >
-            <!-- ... other navigation items ... -->
+          <div class="p-2">
+            <div class="row">CS4550.12631.202410</div>
+            <div class="row" style="display: flex; justify-content: center">
+              Modules
+            </div>
+          </div>
+          <div class="p-2">
+            <div data-bs-theme="dark">
+              <a
+                class="btn btn-close btn-primary"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasTop"
+                role="button"
+                aria-controls="offcanvasTop"
+              >
+              </a>
+              <div
+                class="offcanvas offcanvas-top offcanvas-full-screen"
+                data-bs-scroll="true"
+                data-bs-backdrop="false"
+                tabindex="-1"
+                id="offcanvasTop"
+                aria-labelledby="offcanvasTopLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasTopLabel"></h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body" style="background-color: white">
+                  <div class="text-left">
+                    <div class="row">
+                      <a
+                        href="screen.html"
+                        style="color: red; text-decoration: none"
+                      >
+                        <i class="fa fa-home"></i> Home</a
+                      >
+                    </div>
+                    <div class="row">
+                      <a
+                        href="../Modules/index.html"
+                        style="color: red; text-decoration: none"
+                        ><i class="fa fa-circle-o"></i> Modules</a
+                      >
+                    </div>
+                    <div class="row">
+                      <a href="#" style="color: red; text-decoration: none"
+                        ><i class="fa fa-plug"></i> Piazza</a
+                      >
+                    </div>
+                    <div class="row">
+                      <a href="#" style="color: red; text-decoration: none"
+                        ><i class="fa fa-plug"></i> Zoom</a
+                      >
+                    </div>
+                    <div class="row">
+                      <a href="#" style="color: red; text-decoration: none"
+                        ><i class="fa fa-pencil-square-o"></i> Assignmnets</a
+                      >
+                    </div>
+                    <div class="row">
+                      <a href="#" style="color: red; text-decoration: none"
+                        ><i class="fa fa-plane"></i> Quizzes</a
+                      >
+                    </div>
+                    <div class="row">
+                      <a href="#" style="color: red; text-decoration: none"
+                        ><i class="fa fa-book"></i> Grades</a
+                      >
+                    </div>
+                    <div class="row">
+                      <a href="#" style="color: red; text-decoration: none"
+                        ><i class="fa fa-users"></i> People</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -458,5 +572,12 @@
         </div>
       </div>
     </div>
+    <script src="https://kit.fontawesome.com/d86fba7c7b.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
