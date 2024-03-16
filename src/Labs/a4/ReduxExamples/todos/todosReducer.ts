@@ -1,10 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 const initialState = {
   todos: [
     { id: "1", title: "Learn React" },
     { id: "2", title: "Learn Node" },
   ],
-  todo: { title: "Learn Mongo" },
+  todo: { title: "Learn MongoDB" },
 };
 const todosSlice = createSlice({
   name: "todos",
@@ -19,6 +20,7 @@ const todosSlice = createSlice({
       state.todo = { title: "" };
     },
     deleteTodo: (state, action) => {
+      // here, action.payload corrsponds to the id of the todo to be deleted, not the todo itself
       const newTodos = state.todos.filter((todo) => todo.id !== action.payload);
       state.todos = newTodos;
     },
@@ -34,5 +36,6 @@ const todosSlice = createSlice({
     },
   },
 });
+
 export const { addTodo, deleteTodo, updateTodo, setTodo } = todosSlice.actions;
 export default todosSlice.reducer;

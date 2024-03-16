@@ -13,6 +13,7 @@ import ArrayStateVariable from "./ArrayStateVariable";
 import ParentStateComponent from "./ParentStateComponent";
 import { useSelector } from "react-redux";
 import { LabState } from "../store";
+import TodoList from "./ReduxExamples/todos/TodoList";
 
 function Assignment4() {
   function sayHello() {
@@ -23,14 +24,7 @@ function Assignment4() {
   return (
     <>
       <h1>Assignment 4</h1>
-      <ul className="list-group">
-        {todos.map((todo) => (
-          <li className="list-group-item" key={todo.id}>
-            {todo.title}
-          </li>
-        ))}
-      </ul>
-
+      <TodoList />
       <ReduxExamples />
       <ClickEvent />
       <PassingDataOnEvent />
