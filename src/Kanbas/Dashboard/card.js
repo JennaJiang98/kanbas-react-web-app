@@ -4,7 +4,7 @@ import { PiNotePencil } from "react-icons/pi";
 import "../index.css";
 import "./card.css";
 
-const Card = ({
+const CourseCard = ({
   course = {
     _id: "Unknown_id",
     name: "Unknown_name",
@@ -44,7 +44,7 @@ const Card = ({
           <Link
             key={course.number}
             to={"/Kanbas/Dashboard"}
-            className="wd-course-card-icon-grey"
+            class="wd-course-card-icon-grey"
           >
             <PiNotePencil />
           </Link>
@@ -54,4 +54,4 @@ const Card = ({
   );
 };
 
-export default Card;
+export default CourseCard;
