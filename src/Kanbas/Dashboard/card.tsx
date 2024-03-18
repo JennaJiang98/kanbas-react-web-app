@@ -44,7 +44,7 @@ const CourseCard = ({
           <Link
             key={course.number}
             to={"/Kanbas/Dashboard"}
-            class="wd-course-card-icon-grey"
+            className="wd-course-card-icon-grey"
           >
             <PiNotePencil />
           </Link>

@@ -8,8 +8,8 @@ import store from "./store";
 import { Provider } from "react-redux";
 
 function Kanbas() {
-  // const [courses, setCourses] = useState(db.courses);
-  const [courses, setCourses] = useState<any[]>(db.courses);
+  const [courses, setCourses] = useState(db.courses);
+  // const [courses, setCourses] = useState<any[]>(db.courses);
   const [course, setCourse] = useState({
     name: "New course",
     number: "New Number",
@@ -24,14 +24,14 @@ function Kanbas() {
     ]);
   };
 
-  const deleteCourse = (courseId: string) => {
+  const deleteCourse = (courseId) => {
     setCourses(courses.filter((course) => course._id !== courseId));
   };
 
   const updateCourse = () => {
     setCourses(
       courses.map((c) => {
-        if (c._id === course) {
+        if (c._id === course._id) {
           return course;
         } else {
           return c;

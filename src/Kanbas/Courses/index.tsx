@@ -7,13 +7,17 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/Editor";
 import Grades from "./Grades";
-import React from "react";
+import { useState } from "react";
 import "../../index.css";
 import "./index.css";
 
-function Courses({ courses }) {
+function Courses({ courses }: { courses: any[] }) {
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId);
+  const [activePageName, setActivePageName] = useState("");
+  const updateActivePageName = (name: any) => {
+    setActivePageName(name);
+  };
 
   return (
     <div>

@@ -4,6 +4,7 @@ import db from "../../Database";
 import "./List.css";
 import { useSelector, useDispatch } from "react-redux";
 import { addModule, deleteModule, updateModule, setModule } from "./reducer";
+import { KanbasState } from "../../store";
 
 function ModuleList() {
   const { courseId } = useParams();
@@ -33,8 +34,12 @@ function ModuleList() {
   //         })
   //     )
   // }
-  const modules = useSelector((state) => state.modulesReducer.modules);
-  const module = useSelector((state) => state.modulesReducer.module);
+  const modules = useSelector(
+    (state: KanbasState) => state.modulesReducer.modules
+  );
+  const module = useSelector(
+    (state: KanbasState) => state.modulesReducer.module
+  );
   const dispatch = useDispatch();
 
   return (
